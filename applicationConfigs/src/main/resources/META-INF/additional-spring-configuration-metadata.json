@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "spring.security.permit.url[0]",
+      "type": "java.lang.String",
+      "description": "Description for spring.security.permit.url[0]."
+  }
+] }

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+        <Target>System.out</Target>
+        <encoder>
+            <pattern>[%d{HH:mm:ss}][%t][%p][%c]-%m%n</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>info</level>
+        </filter>
+    </appender>
+    <appender name="logStash" class="com.cwbase.logback.RedisAppender">
+        <source>boot-sleuth</source>
+        <type>dev</type>
+        <host>127.0.0.1</host>
+        <key>logstash:redis</key>
+        <port>6379</port>
+        <password>lottery</password>
+        <database>15</database>
+        <tags>dev</tags>
+        <mdc>true</mdc>
+        <location>true</location>
+        <callerStackIndex>0</callerStackIndex>
+    </appender>
+
+    <root level="info">
+        <appender-ref ref="Console"/>
+        <appender-ref ref="logStash"/>
+    </root>
+</configuration>

@@ -1,0 +1,36 @@
+server:
+  port: 8185
+  servlet:
+    context-path: /
+#配置分布式服务
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@localhost:8185/eureka/
+spring:
+  application:
+    name: appaction-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: http://appation_config@data.scyl9.com:9999/r/appaction_config.git
+          search-paths: config
+          username: appation_config
+          password: config123456
+        #配置config前缀
+        prefix: /config
+      label: master
+  #配置访问用户名密码
+  security:
+    basic:
+      enabled: true
+    user:
+      name: config
+      password: YWBKWEHXCSGLAE9D
+    permit:
+      url[0]: '/config/refresh'

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/applicationConfigs/applicationConfigs.iml" filepath="$PROJECT_DIR$/applicationConfigs/applicationConfigs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/applicationFeignServer/applicationFeignServer.iml" filepath="$PROJECT_DIR$/applicationFeignServer/applicationFeignServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/applicationUserClient/applicationUserClient.iml" filepath="$PROJECT_DIR$/applicationUserClient/applicationUserClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloudApplication.iml" filepath="$PROJECT_DIR$/cloudApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/loggingCenterServer/loggingCenterServer.iml" filepath="$PROJECT_DIR$/loggingCenterServer/loggingCenterServer.iml" />
+    </modules>
+  </component>
+</project>

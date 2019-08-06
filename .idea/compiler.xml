@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="applicationConfigs" />
+        <module name="cloudApplication" />
+        <module name="applicationUserClient" />
+        <module name="loggingCenterServer" />
+        <module name="applicationFeignServer" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="applicationConfigs" target="1.8" />
+      <module name="applicationFeignServer" target="1.8" />
+      <module name="applicationUserClient" target="1.8" />
+      <module name="cloudApplication" target="1.8" />
+      <module name="demo" target="1.8" />
+      <module name="loggingCenterServer" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="applicationConfigs" options="-parameters" />
+      <module name="applicationFeignServer" options="-parameters" />
+      <module name="applicationUserClient" options="-parameters" />
+      <module name="cloudApplication" options="-parameters" />
+      <module name="demo" options="-parameters" />
+      <module name="loggingCenterServer" options="-parameters" />
+    </option>
+  </component>
+</project>

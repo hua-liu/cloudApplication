@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: feign-server
+  cloud:
+    config:
+      label: master
+      profile: dev
+      uri: http://localhost:8185/config
+      username: config
+      password: YWBKWEHXCSGLAE9D
